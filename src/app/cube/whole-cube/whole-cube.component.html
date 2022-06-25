@@ -1,0 +1,13 @@
+<p>whole-cube works!</p>
+
+<div class="scene">
+<div *ngFor="let item of items">
+    <div class="pos" [style.right]="right">
+        <app-cube-piece></app-cube-piece>
+    </div>
+    <div class="pos" [style.right]="right1">
+        <app-cube-piece></app-cube-piece>
+    </div>
+</div>
+</div>
+

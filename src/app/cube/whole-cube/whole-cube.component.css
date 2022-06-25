@@ -1,0 +1,11 @@
+.scene {
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pos {
+    position: relative;
+}

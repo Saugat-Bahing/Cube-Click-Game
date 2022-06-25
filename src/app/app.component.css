@@ -1,0 +1,25 @@
+
+.score {
+    position: absolute;
+    top: 10vh;
+    color: white;
+    right: 10vw;
+    font-size: 30px;
+}
+
+.over {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    left: 38vw;
+    top: 50vh;
+}
+
+.guide {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    text-shadow: 0 0 20px red;
+}

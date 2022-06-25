@@ -1,0 +1,87 @@
+
+
+.container {
+    transform-style: preserve-3d;
+    width: var(--box-size);
+    height: var(--box-size);
+    animation: rotate 10s linear infinite;
+    box-sizing: border-box;
+    position: absolute;
+    box-shadow: 0 0 1000px rgb(47, 13, 201);
+}
+
+.container1 {
+    position: relative;
+    top: 50px;
+    transform-style: preserve-3d;
+    width: var(--box-size);
+    height: var(--box-size);
+    animation: rotate 5s linear infinite;
+    box-sizing: border-box;
+    position: absolute;
+    box-shadow: 0 0 1000px rgb(47, 13, 201);
+}
+
+@keyframes rotate {
+    from {transform: rotateY(0deg) rotateZ(0deg) translateY(0vh);}
+    to {transform: rotateY(360deg) rotateZ(360deg) translateY(100vh);;}
+}
+
+@keyframes move {
+    from {transform: translateY(0vh);}
+    to {transform: translateY(100vh);}
+}
+
+.container div {
+    position: absolute;
+    width: var(--box-size);
+    height: var(--box-size);
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+
+.container1 div {
+    position: absolute;
+    width: var(--box-size);
+    height: var(--box-size);
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+
+.front {
+    transform: translateZ(calc(var(--box-size)/2));
+    background-color: #FF1700;
+    box-shadow: 0 0 15px #FF1700;
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(calc(var(--box-size)/2));
+    background-color: #FF8E00;
+    box-shadow: 0 0 15px #FF8E00;
+}
+
+.left {
+    transform: rotateY(90deg) translateZ(calc(var(--box-size)/-2)) ;
+    background-color: #FFE400;
+    box-shadow: 0 0 15px #FFE400;
+}
+
+.right {
+    transform: rotateY(-90deg) translateZ(calc(var(--box-size)/-2)) ;
+    background-color: #06FF00;
+    box-shadow: 0 0 15px #06FF00;
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(calc(var(--box-size)/2)) ;
+    background-color: #FF008E;
+    box-shadow: 0 0 15px #FF008E;
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(calc(var(--box-size)/2)) ;
+    background-color: #99FEFF;
+    box-shadow: 0 0 15px #99FEFF;
+}
+
+

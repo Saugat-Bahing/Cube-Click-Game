@@ -1,0 +1,8 @@
+<div class="score">Score: {{score}}</div>
+<div class="guide">Click On The Red Side :)</div>
+<div class="over" *ngIf="score==20">GAME OVER</div>
+<div>
+<app-whole-cube></app-whole-cube>
+</div>
+
+<router-outlet></router-outlet>
